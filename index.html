@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Jeu développé en javascript où vous devez trouver, en un maximum de 5 essais, un nombre entre 1 et 100">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Trouve le nombre</title>
 </head>
 <body>
+    <img id="arrow" src="./src/siteCV.png" alt="Flèche indiquant le lien vers le site CV">
     <a class="cv" href="https://alexandreh.promo-67.codeur.online/Online-CV/" target="_blank">HAMM ALEXANDRE</a>
-
     <div class="container">
         <h1>Trouve le nombre</h1>
         <p>Trouve le bon nombre en 0 et 100. Tu as 5 essais !</p>
@@ -20,9 +21,8 @@
             <i class="far fa-heart"></i>
             <i class="fas fa-heart"></i>
         </div>
-
         <form id="inputBox">
-            <label for="number">Entrez un nombre :</label>
+            <label for="number" id="label">Entrez un nombre :</label>
             <input type="number" id="number" min="0" max="100" required>
             <button type="submit" id="essayerBtn">Essayer</button>
             <p id="message"></p>
@@ -31,6 +31,6 @@
         <p id="details">* Brûlant = &plusmn; 2; Chaud = &plusmn; 5 Tiède = &plusmn; 10 ; Froid = + de 10</p>
         <p class="credits">Credits <a href="https://www.youtube.com/watch?v=PbTVCaSVYsI&list=PL_LCrELe9fq5n4c2K2KTw6bqpJIcf02TS&index=1"><i class="fab fa-youtube"></i> Wikode medias</a></p>
     </div>
-</body>
 <script src="./app.js"></script>
+</body>
 </html>

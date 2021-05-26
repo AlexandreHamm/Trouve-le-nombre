@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=KoHo:wght@500&display=swap');
 
+/* VARIABLES */
 :root{
     --title: #f8c27a;
     --textShadow: 0 2px 2px rgba(0,0,0,.7);
     --boxShadow: 0 2px 2px rgba(0,0,0,.2);
 }
 
+/* RESET CSS */
 *{
     padding: 0;
     margin: 0;
@@ -13,17 +15,25 @@
 }
 
 .cv{
-    color: white;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 20px;
     position: fixed;
     top: 225px;
     padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.28);
+    box-shadow: var(--boxShadow);
     background-color: rgba(255, 255, 255, 0.4);
     text-decoration: none;
-    font-family: 'Odibee Sans', cursive;
+    font-family: 'KoHo', sans-serif;
+}
+
+#arrow{
+    display: inline-flex;
+    position: fixed;
+    max-width: 180px;
+    top: 10%;
+    right: 37%;
+    transform: rotate(25deg);
 }
 
 body{
@@ -59,7 +69,7 @@ h1{
     margin: 10px;
 }
 
-.fa-heart{
+.fas{
     margin-left: 15px;
     font-size: 50px;
     background: -webkit-linear-gradient(315deg, rgba(255,0,0,1) 0%, rgba(218,0,0,1) 58%, rgba(0,0,0,1) 100%); );
@@ -68,7 +78,9 @@ h1{
 }
 
 .far{
-    color: black !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    margin-left: 15px;
+    font-size: 50px;
 }
 
 #inputBox{
@@ -108,7 +120,7 @@ p#message{
 
 #rejouer{
     display: none;
-    margin: 5px auto 0 auto;
+    margin: 20px auto 0 auto;
 }
 
 #details{
@@ -129,6 +141,9 @@ p#message{
 @media screen and (max-width: 700px) {
     .cv{
         top: 20px;
+    }
+    #arrow{
+        display: none;
     }
     .fa-heart{
         font-size: 35px;
